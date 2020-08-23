@@ -1,0 +1,7 @@
+---
+- name: Смотрим сколько пользователей
+  find:
+    path: /users
+    file_type: directory
+- name: Создаём пользователей
+  user:

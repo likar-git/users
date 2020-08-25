@@ -1,4 +1,4 @@
-   - name: Создаём пользователей с ключами
+name: Создаём пользователей с ключами
          user
           name="{{ item.name }}"
           generate_ssh_key=yes

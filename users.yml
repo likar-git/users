@@ -8,5 +8,5 @@
     root
   remote_user:
     likar
-- roles:
-    users
+roles:
+  - role: users

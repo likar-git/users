@@ -8,6 +8,7 @@
   fetch:
     src: /home/{{ item }}/.ssh/id_rsa
     dest: /etc/ansible/git/users/{{ item }}/id_rsa
+    flat: yes
   with_items:
   -  pasha
   -  yura

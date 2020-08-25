@@ -1,9 +1,9 @@
 ---
 tasks:
-      name: Создаём пользователей с ключами
-         user
-         name="{{ item.name }}"
-         generate_ssh_key=yes
-         ssh_key_bits=2048
-         ssh_key_file=.ssh/id_rsa
-         with_items=user_details
+   - name: Создаём пользователей с ключами
+         user:
+          name="{{ item.name }}"
+          generate_ssh_key=yes
+          ssh_key_bits=2048
+          ssh_key_file=.ssh/id_rsa
+          with_items=user_details

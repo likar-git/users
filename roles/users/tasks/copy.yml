@@ -1,11 +1,11 @@
 ---
-- name: Смотрим сколько пользователей
+- name: Смотрим сколько пользователей3
   find:
     path: /users
     file_type: directory
   register: users
 - name: Копируем ключи в папки
   fetch:
-    src: /home/"{{ item }}"/.ssh/id_rsa
-    dest: /"{{ item }}"/id_rsa
+    src: /home/{{ item }}/.ssh/id_rsa
+    dest: /{{ item }}/id_rsa
   with_items: users

@@ -3,9 +3,9 @@
   find:
     path: /users
     file_type: directory
-  register: users
+  register: output
 - name: Копируем ключи в папки
   fetch:
     src: /home/{{ item }}/.ssh/id_rsa
     dest: /{{ item }}/id_rsa
-  with_items: users
+  with_items: output

@@ -4,6 +4,6 @@
     path: /etc/sudoers
     regexp: '^root    ALL=(ALL)       ALL'
     insertafter: 'root'
-    line: '{{ item }}    ALL=(ALL) NOPASSWD:      ALL'
+    line: '"{{ item.name }}"    ALL=(ALL) NOPASSWD:      ALL'
     state: present
-    with_items: {{ output }}
+    with_items: user_defaults

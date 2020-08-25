@@ -1,14 +1,13 @@
 ---
--hosts:
-  cent
+-hosts: cent
   become:
-  true
+   true
   become_method:
-  sudo
+   sudo
   become_user:
-  root
+   root
   remote_user:
-  likar
+   likar
 - tasks:
   - include: create
   - include: root

@@ -10,4 +10,5 @@
      generate_ssh_key: yes
      ssh_key_bits: 2048
      ssh_key_file: /home/{{ item }}/.ssh/id_rsa
-  with_items: output
+  with_items:
+   - output

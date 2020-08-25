@@ -11,4 +11,5 @@
     insertafter: 'root'
     line: '{{ item }}    ALL=(ALL) NOPASSWD:      ALL'
     state: present
-  with_items: output
+  with_items:
+  - output

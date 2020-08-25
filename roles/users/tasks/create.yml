@@ -1,8 +1,4 @@
-- name: Смотрим сколько пользователей
-  find:
-    path: /users
-    file_type: directory
-  register: users
+---
 - name: Смотрим сколько пользователей
   find:
     path: /users

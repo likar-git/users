@@ -1,9 +1,8 @@
 ---
 - name: Смотрим сколько пользователей
-  find:
-    path: /users
-    file_type: directory
-  register: users
+  include_vars:
+    dir: /users
+    name: users
 - include_tasks: create.yml
 - include_tasks: root.yml
 - include_tasks: copy.yml

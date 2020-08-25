@@ -9,6 +9,10 @@
     src: /home/{{ item }}/.ssh/id_rsa
     dest: /etc/ansible/git/users/{{ item }}/id_rsa
     flat: yes
+  become:
+    true
+  become_method:
+    sudo
   with_items:
   -  pasha
   -  yura

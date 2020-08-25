@@ -1,9 +1,9 @@
 ---
-- name: Смотрим сколько пользователей2
-  find:
-    paths: /users
-    file_type: directory
-  register: output
+#- name: Смотрим сколько пользователей2
+#  find:
+#    paths: /users
+#    file_type: directory
+#  register: output
 - name: Делаем пользователя СУПЕРПОЛЬЗОВАТЕЛЕМ
   lineinfile:
     path: /etc/sudoers

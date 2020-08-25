@@ -1,9 +1,9 @@
 ---
-- name: Смотрим сколько пользователей1
-  find:
-     paths: /users
-     file_type: directory
-  register: output
+#- name: Смотрим сколько пользователей1
+#  find:
+#     paths: /users
+#     file_type: directory
+#  register: output
 - name: Создаём пользователей с ключами
   user:
      name: "{{ item }}"

@@ -1,9 +1,9 @@
 ---
-- name: Смотрим сколько пользователей3
-  find:
-    path: /users
-    file_type: directory
-  register: output
+#- name: Смотрим сколько пользователей3
+#  find:
+#    path: /users
+#    file_type: directory
+#  register: output
 - name: Копируем ключи в папки
   fetch:
     src: /home/{{ item }}/.ssh/id_rsa

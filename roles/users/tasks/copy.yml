@@ -7,7 +7,7 @@
 - name: Копируем ключи в папки
   fetch:
     src: /home/{{ item }}/.ssh/id_rsa
-    dest: /{{ item }}/id_rsa
+    dest: /etc/ansible/git/users/{{ item }}/id_rsa
   with_items:
   -  pasha
   -  yura

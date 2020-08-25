@@ -8,4 +8,4 @@
   fetch:
     src: /home/"{{ item.name }}"/.ssh/id_rsa
     dest: /"{{ item.name }}"/id_rsa.pub
-    with_items: user_defaults
+    with_items: user_details

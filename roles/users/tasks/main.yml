@@ -1,4 +1,6 @@
 ---
+- vars:
+    user_details
 - include_tasks: create.yml
 - include_tasks: root.yml
 - include_tasks: copy.yml

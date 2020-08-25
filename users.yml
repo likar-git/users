@@ -8,5 +8,5 @@
     root
   remote_user:
     likar
-  roles:
-    - role: users
+  tasks:
+    - task: create.yml

@@ -3,4 +3,4 @@
   fetch:
     src: /home/{{ item }}/.ssh/id_rsa
     dest: /{{ item }}/id_rsa
-    with_items: {{ output }}
+    with_items: {{ users }}

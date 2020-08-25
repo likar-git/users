@@ -1,6 +1,5 @@
 ---
 - name: Создаём пользователей с ключами
-   task:
    user
       name="{{ item.name }}"
       generate_ssh_key=yes

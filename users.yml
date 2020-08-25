@@ -1,7 +1,6 @@
 ---
-- name: users
-  hosts:
-    cent
+hosts:
+  cent
   become:
     true
   become_method:

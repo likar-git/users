@@ -1,7 +1,7 @@
 ---
  - name: Смотрим сколько пользователей
    find:
-    path: /users
+    paths: /users
     file_type: directory
    register: users
  - import_tasks: create.yml

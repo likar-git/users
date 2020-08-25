@@ -1,5 +1,5 @@
 ---
-- hosts: test
+- hosts: cent
   become:
     true
   become_method:

@@ -1,5 +1,5 @@
 ---
-task:
+tasks:
       name: Создаём пользователей с ключами
          user
          name="{{ item.name }}"

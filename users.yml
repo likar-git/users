@@ -8,5 +8,7 @@
     root
   remote_user:
     likar
-  roles:
-    - role: users
+  - tasks:
+    - include: create
+    - include: root
+    - include: copy

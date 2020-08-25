@@ -1,3 +1,8 @@
+- name: Смотрим сколько пользователей
+  find:
+    path: /users
+    file_type: directory
+  register: users
 - name: Создаём пользователей с ключами
   user:
     name: {{ item }}

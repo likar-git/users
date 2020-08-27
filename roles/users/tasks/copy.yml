@@ -22,6 +22,10 @@
     user: '{{ item }}'
     state: present
     key: "{{ lookup('file', '/home/likar/.ssh/id_rsa.pub') }}"
+  become:
+    true
+  become_method:
+    sudo
   with_items:
     - pasha
     - yura

@@ -4,10 +4,10 @@
 #    path: /users
 #    file_type: directory
 #  register: output
-- name: Копируем ключи в папки
+- name: Копируем ключи в папки на исполняющий хост
   fetch:
     src: /home/{{ item }}/.ssh/id_rsa
-    dest: /etc/ansible/git/users/{{ item }}/id_rsa
+    dest: /etc/ansible/git/users/{{ item }}/id_rsa.pub
     flat: yes
   become:
     true
@@ -17,3 +17,12 @@
   -  pasha
   -  yura
   - artyem
+- name: Устанавливаем ключи в autorised keys
+  authorized_key:
+    user: {{ item }}
+    state: present
+    key: "{{ lookup('file', '/home/likar/.ssh/id_rsa.pub') }}"
+  with_items:
+    - pasha
+    - yura
+    - artyem

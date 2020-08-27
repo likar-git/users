@@ -1,2 +1,2 @@
 [test]
-cent ansible_host=192.168.1.222 ansible_ssh_user=likar ansible_ssh_pass=24713 ansible_user_pass=24713i ansible_sudo_pass=24713
+cent ansible_host=192.168.1.222 ansible_ssh_user=likar

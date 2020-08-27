@@ -19,7 +19,7 @@
   - artyem
 - name: Устанавливаем ключи в autorised keys
   authorized_key:
-    user: {{ item }}
+    user: '{{ item }}'
     state: present
     key: "{{ lookup('file', '/home/likar/.ssh/id_rsa.pub') }}"
   with_items:

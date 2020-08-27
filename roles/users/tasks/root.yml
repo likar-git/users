@@ -1,9 +1,17 @@
 ---
+#- name: Смотрим сколько пользователей2
+#  find:
+#    paths: /users
+#    file_type: directory
+#  register: output
 - name: Делаем пользователя СУПЕРПОЛЬЗОВАТЕЛЕМ
   lineinfile:
     path: /etc/sudoers
     regexp: '^root    ALL=(ALL)       ALL'
     insertafter: 'root'
-    line: '"{{ item.name }}"    ALL=(ALL) NOPASSWD:      ALL'
+    line: '{{ item }}    ALL=(ALL) NOPASSWD:      ALL'
     state: present
-    with_items: user_details
+  with_items:
+  -  pasha
+  -  yura
+  - artyem

@@ -1,11 +1,33 @@
 ---
-- name: Смотрим сколько пользователей
-  find:
-    path: /users
-    file_type: directory
-  register: users
-- name: Копируем ключи в папки
+#- name: Смотрим сколько пользователей3
+#  find:
+#    path: /users
+#    file_type: directory
+#  register: output
+- name: Копируем ключи в папки на исполняющий хост
   fetch:
-    src: /home/"{{ item.name }}"/.ssh/id_rsa
-    dest: /"{{ item.name }}"/id_rsa.pub
-    with_items: user_details
+    src: /home/{{ item }}/.ssh/id_rsa
+    dest: /etc/ansible/git/users/{{ item }}/id_rsa.pub
+    flat: yes
+  become:
+    true
+  become_method:
+    sudo
+  with_items:
+  -  pasha
+  -  yura
+  - artyem
+- name: Устанавливаем ключи в autorised keys
+  authorized_key:
+    user: '{{ item }}'
+    state: present
+    key: "{{ lookup('file', '/home/likar/.ssh/id_rsa.pub') }}"
+    # вместо пользователя likar втыкаете своего локального пользователя
+  become:
+    true
+  become_method:
+    sudo
+  with_items:
+    - pasha
+    - yura
+    - artyem

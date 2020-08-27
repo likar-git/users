@@ -1,4 +1,9 @@
 ---
-- include_tasks: create.yml
-- include_tasks: root.yml
-- include_tasks: copy.yml
+ - name: Смотрим сколько пользователей
+   find:
+    paths: /users
+    file_type: directory
+   register: users
+ - import_tasks: create.yml
+ - import_tasks: root.yml
+ - import_tasks: copy.yml

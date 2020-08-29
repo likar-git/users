@@ -6,7 +6,7 @@
     state: present
     key: "{{ lookup('file', '/home/likar/.ssh/id_rsa.pub') }}"
     # вместо пользователя likar втыкаете своего локального пользователя
-#  with_items: "{{ user }}"
+  with_items: "{{ user }}"
 #  with_items:
 #    - pasha
 #    - yura

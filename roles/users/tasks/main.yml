@@ -8,7 +8,6 @@
 #- name: vars
 - include_vars:
    dir: vars
-   file: main.yml
    name: item
 - import_tasks: create.yml
 # - import_tasks: root.yml

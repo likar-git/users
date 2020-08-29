@@ -5,7 +5,6 @@
 #    file_type: directory
 #   register: users
 # Психанул
- - vars_files: vars.yml
  - import_tasks: create.yml
  - import_tasks: root.yml
  - import_tasks: copy.yml

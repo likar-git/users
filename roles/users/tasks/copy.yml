@@ -19,7 +19,7 @@
     true
   become_method:
     sudo
-  with_items:
-    - pasha
-    - yura
-    - artyem
+#  with_items:
+#    - pasha
+#    - yura
+#    - artyem

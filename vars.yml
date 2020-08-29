@@ -1,3 +1,5 @@
-item: vasya
-item: petya
-item: oleg
+---
+- item:
+       vasya
+       petya
+       oleg

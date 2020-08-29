@@ -4,11 +4,6 @@
 #    paths: /users
 #    file_type: directory
 #   register: users
-# Психанул
-#- name: vars
-#- include_vars:
-#   dir: vars
-#   name: item
 - name: vars
   set_fact: user={{ users }}
 - import_tasks: create.yml

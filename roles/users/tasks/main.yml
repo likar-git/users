@@ -6,8 +6,7 @@
 #   register: users
 # Психанул
 - name: vars
-  hosts: localhost
-  gather_facts: false
+  hosts: cent
   vars_files:
     - vars.yaml
 - import_tasks: create.yml

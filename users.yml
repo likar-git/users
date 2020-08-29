@@ -10,4 +10,3 @@
     likar
   roles:
     - role: users
-      include_vars: vars.yml

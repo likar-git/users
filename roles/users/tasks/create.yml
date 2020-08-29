@@ -4,8 +4,6 @@
 #     paths: /users
 #     file_type: directory
 #  register: output
-- name: vars
-  set_fact: user={{ users }}
 - name: Создаём пользователей с ключами
   debug:
     msg: "{{ item }}"

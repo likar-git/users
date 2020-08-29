@@ -8,7 +8,7 @@
 #  include_vars: /etc/ansible/git/users/vars/main.yml
 - name: Создаём пользователей с ключами
   debug:
-    msg: "{{ name }}"
+    msg: "{{ item.name }}"
 #  user:
 #     name: "{{ item.name }}"
 #     generate_ssh_key: yes

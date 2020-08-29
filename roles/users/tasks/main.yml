@@ -7,7 +7,8 @@
 # Психанул
 #- name: vars
 - include_vars:
-   file: /etc/ansible/git/users/roles/users/vars/main.yaml
+   dir: /etc/ansible/git/users/roles/users/vars/
+   file: main.yaml
 - import_tasks: create.yml
 # - import_tasks: root.yml
 # - import_tasks: copy.yml

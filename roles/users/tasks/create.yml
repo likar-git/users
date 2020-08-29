@@ -4,13 +4,12 @@
 #     paths: /users
 #     file_type: directory
 #  register: output
-#- name: vars
-#  include_vars:
-#   dir: vars
+- name: vars
+  set_fact: user={{ users }}
 - name: Создаём пользователей с ключами
   debug:
     msg: "{{ item }}"
-    with_items: users
+    with_items: user
 #  user:
 #     name: "{{ item.name }}"
 #     generate_ssh_key: yes

@@ -5,6 +5,11 @@
 #    file_type: directory
 #   register: users
 # Психанул
- - import_tasks: create.yml
+- name: vars
+  hosts: localhost
+  gather_facts: false
+  vars_files:
+    - vars.yaml
+- import_tasks: create.yml
 # - import_tasks: root.yml
 # - import_tasks: copy.yml

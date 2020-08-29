@@ -6,6 +6,5 @@
 #   register: users
 # Психанул
  - import_tasks: create.yml
-   vars_file: vars.yml
 # - import_tasks: root.yml
 # - import_tasks: copy.yml

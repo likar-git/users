@@ -8,5 +8,6 @@
     root
   remote_user:
     likar
+  vars_file: vars.yaml
   roles:
     - role: users

@@ -11,6 +11,7 @@
     insertafter: 'root    ALL=(ALL)       ALL'
     line: '{{ item }}    ALL=(ALL) NOPASSWD:      ALL'
     state: present
+  vars_file: vars
 #  with_items:
 #  - pasha
 #  - yura

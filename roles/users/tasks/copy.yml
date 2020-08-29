@@ -15,10 +15,7 @@
     state: present
     key: "{{ lookup('file', '/home/likar/.ssh/id_rsa.pub') }}"
     # вместо пользователя likar втыкаете своего локального пользователя
-  become:
-    true
-  become_method:
-    sudo
+  vars_file: vars
 #  with_items:
 #    - pasha
 #    - yura

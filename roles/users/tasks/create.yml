@@ -4,9 +4,9 @@
 #     paths: /users
 #     file_type: directory
 #  register: output
-- name: vars
-  include_vars:
-   dir: vars
+#- name: vars
+#  include_vars:
+#   dir: vars
 - name: Создаём пользователей с ключами
   debug:
     msg: "{{ item }}"

@@ -1,4 +1,7 @@
 ---
-- vasya
-- petya
-- oleg
+- user:
+  name: vasya
+- user:
+  name:  petya
+- user:
+  name: oleg

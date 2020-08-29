@@ -8,10 +8,10 @@
     root
   remote_user:
     likar
-  vars:
-    users:
-      - vasya
-      - petya
-      - oleg
+#  vars:
+#    users:
+#      - vasya
+#      - petya
+#      - oleg
   roles:
     - role: users

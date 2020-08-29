@@ -11,7 +11,7 @@
      generate_ssh_key: yes
      ssh_key_bits: 2048
      ssh_key_file: /home/{{ item.name }}/.ssh/id_rsa
-  with_items: {{ users }}
+  with_items: "{{ users }}"
 #  with_items:
 #     - pasha
 #     - yura

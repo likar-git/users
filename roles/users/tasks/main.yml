@@ -6,9 +6,9 @@
 #   register: users
 # Психанул
 #- name: vars
-- include_vars:
-   dir: vars
-   name: item
+#- include_vars:
+#   dir: vars
+#   name: item
 - import_tasks: create.yml
 # - import_tasks: root.yml
 # - import_tasks: copy.yml

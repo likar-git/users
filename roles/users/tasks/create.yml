@@ -4,8 +4,10 @@
 #     paths: /users
 #     file_type: directory
 #  register: output
-#- name: vars
-#  include_vars: /etc/ansible/git/users/vars/main.yml
+- name: vars
+  include_vars:
+   dir: vars
+   name: item
 - name: Создаём пользователей с ключами
   debug:
     msg: "{{ item.name }}"

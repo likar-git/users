@@ -7,11 +7,10 @@
 - name: vars
   include_vars:
    dir: vars
-   name: item
 - name: Создаём пользователей с ключами
   debug:
     msg: "{{ item.name }}"
-    with_items: item
+    with_items: users
 #  user:
 #     name: "{{ item.name }}"
 #     generate_ssh_key: yes

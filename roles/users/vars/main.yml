@@ -1,4 +1,3 @@
----
-  - name: "vasya"
-  - name: "petya"
-  - name: "oleg"
+  - "vasya"
+  - "petya"
+  - "oleg"

@@ -8,7 +8,7 @@
 - name: vars
   include_vars:
    file: vars.yaml
-   name: item
+   name: users
 - import_tasks: create.yml
 # - import_tasks: root.yml
 # - import_tasks: copy.yml

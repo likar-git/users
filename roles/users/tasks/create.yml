@@ -9,7 +9,7 @@
 - name: Создаём пользователей с ключами
   debug:
     msg: "{{ item }}"
-    with_items: user
+  with_items: user
 #  user:
 #     name: "{{ item.name }}"
 #     generate_ssh_key: yes

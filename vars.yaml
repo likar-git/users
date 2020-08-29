@@ -1,2 +1,5 @@
-name:
-    user1: vasya
+---
+users:
+    - name: vasya
+    - name: petya
+    - name: oleg

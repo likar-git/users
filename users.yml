@@ -8,6 +8,5 @@
     root
   remote_user:
     likar
-  vars_file: /etc/ansible/git/users/vars/vars.yaml
   roles:
     - role: users

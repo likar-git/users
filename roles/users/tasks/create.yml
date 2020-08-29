@@ -10,7 +10,7 @@
    name: users
 - name: Создаём пользователей с ключами
   debug:
-    msg: "{{ users }}"
+    msg: "{{ item }}"
     with_items: users
 #  user:
 #     name: "{{ item.name }}"

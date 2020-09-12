@@ -1,6 +1,9 @@
 - name: Устанавливаем Docker
   yum:
     name: docker
+- name: Устанавливаем Python pip
+  yum:
+    name: python-pip
 - name: Устанавливаем Python
   pip:
     name: docker

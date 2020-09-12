@@ -2,3 +2,4 @@
   yum:
     name: docker
 - import_tasks: systemctl.yml
+- import_tasks: image.yml

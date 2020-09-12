@@ -7,6 +7,7 @@
 #      state: present
 - name: Add Docker Repository
   yum_repository:
+    name: docker
     baseurl: https://download.docker.com/linux/centos/docker-ce.repo
     state: present
 - name: Update apt and install docker-ce

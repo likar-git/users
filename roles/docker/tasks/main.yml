@@ -1,12 +1,11 @@
 - name: Устанавливаем Docker
   yum:
-    name: docker
-- name: Устанавливаем Python pip
-  yum:
-    name: python3-pip
-    state: installed
-- name: Устанавливаем Python
-  pip:
-    name: docker
+    name: docker-ce
+#- name: Устанавливаем Python pip
+#  yum:
+#    name: python3-pip
+#- name: Устанавливаем Python
+#  pip:
+#    name: docker
 - import_tasks: systemctl.yml
 - import_tasks: image.yml

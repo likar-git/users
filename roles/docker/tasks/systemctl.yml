@@ -1,0 +1,5 @@
+- name: Стартуем докер и делаем автозагрузку
+  systemd:
+    state: started
+    enabled: yes
+    name: docker

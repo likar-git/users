@@ -1,3 +1,4 @@
 - name: Устанавливаем Docker
   yum:
     name: docker
+- import_tasks: systemctl.yml

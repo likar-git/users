@@ -3,7 +3,7 @@
     name: docker
 - name: Устанавливаем Python pip
   yum:
-    name: python-pip
+    name: python3-pip
 - name: Устанавливаем Python
   pip:
     name: docker

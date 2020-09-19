@@ -1,4 +1,8 @@
+
 - name: Установка питона
+  yum:
+    name: python
+- name: Установка pip
   pip:
     name: docker
     state: latest

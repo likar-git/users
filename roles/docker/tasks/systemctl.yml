@@ -1,5 +1,5 @@
 - name: Стартуем докер и делаем автозагрузку
-    service:
-      name: docker
-      state: started
-      enabled: yes
+  service:
+    name: docker
+    state: started
+    enabled: yes

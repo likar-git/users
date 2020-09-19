@@ -5,19 +5,12 @@
 #  apt_key:
 #      url: https://download.docker.com/linux/ubuntu/gpg
 #      state: present
-- name: Add Docker Repository
-  yum_repository:
-    name: docker
-    description: docker
-    baseurl: https://download.docker.com/linux/centos/docker-ce.repo
-    state: present
+- name: Добавление записи в репозиторий
+  get_url:
+    url: https://download.docker.com/linux/centos/docker-ce.repo
+    dest: /etc/yum.repos.d/docker-ce.repo
 - name: Update apt and install docker-ce
   yum:
    update_cache: yes
    name: docker-ce
    state: latest
-- name: Install Docker Module for Python
-  pip:
-    name: docker
-- import_tasks: systemctl.yml
-- import_tasks: image.yml

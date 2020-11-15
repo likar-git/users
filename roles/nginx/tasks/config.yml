@@ -4,3 +4,7 @@
     src: /etc/ansible/git/users/roles/nginx/templates/nginx.conf
     dest: /etc/nginx/nginx.conf
     mode: 0644
+- name: Стартуем Nginx и делаем автозагрузку
+  service:
+    name: nginx
+    state: restarted

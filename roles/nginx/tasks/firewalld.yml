@@ -9,5 +9,5 @@
     state: enabled
 - name: Рестартуем, сегодня мы с тобой рестартуем!
     service:
-      name: firewalld
-      state: restarted
+    name: firewalld
+    state: restarted

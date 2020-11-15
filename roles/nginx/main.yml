@@ -1,0 +1,10 @@
+#- name: Устанавливаем Docker
+#  yum:
+#    name: docker
+#- name: Add Docker GPG apt Key
+#  apt_key:
+#      url: https://download.docker.com/linux/ubuntu/gpg
+#      state: present
+- import_tasks: install.yml
+- import_tasks: systemctl.yml
+- import_tasks: image.yml

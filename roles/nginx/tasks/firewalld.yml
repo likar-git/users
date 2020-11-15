@@ -8,6 +8,6 @@
     permanent: true
     state: enabled
 - name: Рестартуем, сегодня мы с тобой рестартуем!
-    service:
-     name: firewalld
-     state: restarted
+  service:
+    name: firewalld
+    state: restarted

@@ -7,7 +7,7 @@
     service: https
     permanent: true
     state: enabled
-- name: Рестартуем, сегодня мы с тобой рестартуем!
-    service:
-    name: firewalld
-    state: restarted
+#- name: Рестартуем, сегодня мы с тобой рестартуем!
+#    service:
+#    name: firewalld
+#    state: restarted

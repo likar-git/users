@@ -1,12 +1,12 @@
 ---
 - firewalld:
     service: http
-     permanent: true
-     state: enabled
+    permanent: true
+    state: enabled
 - firewalld:
     service: https
-     permanent: true
-     state: enabled
+    permanent: true
+    state: enabled
 - name: Рестартуем, сегодня мы с тобой рестартуем!
     service:
       name: firewalld

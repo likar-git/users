@@ -1,0 +1,12 @@
+---
+- hosts: cent
+  become:
+    true
+  become_method:
+    sudo
+  become_user:
+    root
+  remote_user:
+    likar
+  roles:
+    - role: nginx

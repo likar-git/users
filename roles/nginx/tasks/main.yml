@@ -1,4 +1,6 @@
 ---
+- name: vars
+  set_fact: server_pors={{ server_port }}
 - import_tasks: install.yml
 - import_tasks: systemctl.yml
 - import_tasks: firewalld.yml

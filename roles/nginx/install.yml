@@ -1,7 +1,10 @@
-
+---
 - name: Установка Epel-release(тут лежит nginx)
   yum:
     name: epel-release
 - name: Установка самого Nginx
   yum:
     name: nginx
+- name: Установка фаервола(если нет)
+  yum:
+    name: farewalld

@@ -1,0 +1,5 @@
+- name: Стартуем Nginx и делаем автозагрузку
+  service:
+    name: nginx
+    state: started
+    enabled: yes

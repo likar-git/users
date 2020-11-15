@@ -5,6 +5,6 @@
 - name: Установка самого Nginx
   yum:
     name: nginx
-- name: Установка фаервола(если нет)
-  yum:
-    name: farewalld
+#- name: Установка фаервола(если нет)
+#  yum:
+#    name: farewalld
